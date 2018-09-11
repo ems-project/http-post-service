@@ -1,3 +1,12 @@
 #index:
 #    path: /
 #    controller: App\Controller\DefaultController::index
+# the "app_lucky_number" route name is not important yet
+app_post:
+    path: /
+    controller: App\Controller\PostController::postAction
+    methods:    [POST]
+app_option:
+    path: /
+    controller: App\Controller\PostController::optionsAction
+    methods:    [OPTIONS]
